@@ -1,1 +1,1 @@
-   let myfun = function () {
+   let myfun = function () {}
