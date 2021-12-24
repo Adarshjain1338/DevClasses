@@ -1,3 +1,5 @@
+
+/******************************Clouser********************/
 function powerCreator(obj) {
   let fun = function (base) {
     let rv = Math.pow(base, o2.exp);
