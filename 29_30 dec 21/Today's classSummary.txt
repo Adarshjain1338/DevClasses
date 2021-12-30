@@ -1,0 +1,12 @@
+_______________________________________________________________________________
+--------------------------------date :- 30/12/21 ------------------------------
+_______________________________________________________________________________
+        > IMPORTANT :--> 26/12 class is = 29/12/21; (mistake = in naming)
+        > Porject :---> previous class  
+                        + added edit feature 
+                        + added delete feature 
+                        + added presist feature(refresh != new start) 
+                        + code  little modular 
+                        + write the whole js code from Scratch .
+
+        > Notice :- date :: 31/12/21 is "HOLIDAY"
