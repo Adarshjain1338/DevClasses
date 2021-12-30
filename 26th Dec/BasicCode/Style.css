@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #1d1c1d;
+}
+.buttondiv{
+    display: flex;
+    justify-content: center;
+};
+.SpanEdit{
+    
+} 
+#firstbtn{
+    background-color: #13c6f3;
+    border: 1px solid rgb(2, 70, 75);
+    box-shadow: 0px 5px 10px #524e4e;
+    width: 0px 30px;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+#container{
+    display: flex;
+    background-color: #524e4e;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    color:white;
+    border: 2px solid #9e8a8a;
+}
+.folder span{
+    border: 2px solid blanchedalmond;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.folder div{
+    display: flex;
+    justify-content: center;
+}
+.folder{
+    width: 100px;
+    height: auto;
+    border: 5px solid #13c6f3;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.folder :hover{
+    background-color: #13c6f3;
+    color: black;
+}
+.folder [action]{
+    text-decoration: solid;
+}
+
+div[purpose=name]{
+    margin-top: 50px;
+}
