@@ -8,7 +8,7 @@ body{
 .buttondiv{
     display: flex;
     justify-content: center;
-}; 
+}
 #firstbtn{
     background-color: #13c6f3;
     border: 1px solid rgb(2, 70, 75);
@@ -23,8 +23,6 @@ body{
 #container{
     display: flex;
     background-color: #524e4e;
-    /* padding: 10px; */
-    /* margin: 10px; */
     color:white;
     border: 2px solid #9e8a8a;
 }
