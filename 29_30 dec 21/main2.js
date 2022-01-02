@@ -21,12 +21,12 @@
             else{
                 alert(fname + " Already Exists !")
             }
+            //HTML
             addHtmlFolder(fname,fid);
         }
         else{
             alert("Please Enter Something")
         }
-        //HTML
         //STORAGE
         saveTOStoarge();
     }
