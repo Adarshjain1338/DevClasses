@@ -1,0 +1,12 @@
+_______________________________________________________________________________
+--------------------------------date :- 2/01/22 ------------------------------
+_______________________________________________________________________________
+> classes was heavy 
+** Revison must needed **
+> Porject :---> previous class  (project (folder root))
+                    > + added breadCrumbFn
+                    > + added viewfolderfn 
+                    > + added navigatebreadCrumbfn --{not understand complete}
+                    > + updated deletefolderfn
+                    > + updated addfolderHtml
+                    > + updated loadfromstorage
