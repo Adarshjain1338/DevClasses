@@ -1,10 +1,13 @@
 _______________________________________________________________________________
---------------------------------date :- 30/12/21 ------------------------------
+--------------------------------date :- 01/01/22 ------------------------------
 _______________________________________________________________________________
-> Porject :---> previous class  (project (folder root))
+> Project :---> previous class  (project (folder root))
                     {
                         MADE javascript file again with Scratch i
                     }
->update :----> dev class :- saturaday , sunday 
+> update :----> dev class :- saturaday , sunday 
                Holiday :- wednesday 
                Rest day :- Dsa+ System design
+
+
+>Github repo :--> 29_30 modified  .
