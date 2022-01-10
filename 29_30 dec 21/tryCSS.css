@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    background-color: rgb(24, 19, 19);
+    color: white;
+}
+#header {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+}
+#header button{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: bisque;
+    color: black;
+    font-weight: 600;
+
+}
+#header button:hover{
+    transform: scale(1.1);
+    transition-delay: 250ms ease-in 1s;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:  rgb(223, 111, 52);
+
+}
+#breadCrumb {
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+}
+#container {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+}
+.folder{
+    height: auto;
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid rgb(110, 105, 105);
+    background-color: rgb(223, 111, 52);
+    border-radius: 10px;
+}
+.folder div{
+    display: flex;
+    justify-content: center;
+}
+.folder span {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant:small-caps;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(87, 41, 87);
+    box-shadow: 0px 2px 10px #1d1c1d;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.folder span:hover{
+    background-color: #c39ed4;
+    color: black;
+}
+div[purpose = name]{
+    margin-top: 20px;
+}
+#app {
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+}
