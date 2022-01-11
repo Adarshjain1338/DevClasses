@@ -14,9 +14,13 @@
     /*
     ----Add Folder---
     1> we entering name of the folder from user using prompt.
-    2> then we just increase rid by one , everytime this function is run rid will plus one .
-    3> 
-    
+    2> now we are checking if the passed name by user is not equal to null {mtlb name pass kiya hai} but they added spaces in starting or ending . so, we are triming those spaces.
+    3> checking the name exists => in our resourses , if our resources name folder = folder name and woh same parent id ka hai jo abhi current id ka hai toh. already exists keh do usko
+    4> now pid of this.folder is cfid.
+    5> then we just increase rid by one , everytime this function is run rid will plus one .
+    6> adding those folder to our HTML sheet .
+    7> in our RAM using push method => pushing rid ,name , pid , type.
+    8> also saving new folder in our browser storage .
     */
    
    function addFolder() {
