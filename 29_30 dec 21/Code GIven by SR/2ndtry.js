@@ -7,15 +7,35 @@
     let resources = [];
     let cfid = -1;
     let rid = 0;
-
-
+    
+    
     btnAddfolder.addEventListener('click', addFolder);
     btnTextFile.addEventListener('click', addTextFile);
-
-    function addFolder() {
-        let fname = prompt("Enter folder's file name ?");
-        rid++;
+    /*
+    ----Add Folder---
+    1> we entering name of the folder from user using prompt.
+    2> then we just increase rid by one , everytime this function is run rid will plus one .
+    3> 
+    
+    */
+   
+   function addFolder() {
+       let fname = prompt("Enter folder's name");
+       if(fname != null){
+           fname = fname.trim();
+        }
+        if(!fname){ // empty name validation
+            alert("Empty name is not allowed.");
+            return;
+        }
+        // uniqueness of name validation
+        let alreadyExists = resources.some(f=>f.rname == fname && f.pid == cfid);
+        if(alreadyExists == true){
+            alert("This folder =>  "+fname+" Already exists !!");
+            return;
+        }
         let pid = cfid;
+        rid++;
         addFolderHTML(fname, rid, pid);
         resources.push({
             rid: rid,
@@ -78,10 +98,7 @@ we use because we want to save our data , even when we try to refresh it basical
 2> now we are checking that our json is empty or not empty.
 3> the data we are getting it . It is in the JSON fromat . we want it string and we saved our data in our resource array . 
 4> we looped our resource array because "Hum wohi folder ko show karwana chata hai jiska pid match karta ko cfid se . cfid is current folder and pid is parent id"
-5>
-
-
-
+5> if our rid is smaller then our storage rid then we replaace it.
 */
     function loadFromStorage(){
         let json = localStorage.getItem("data")
@@ -99,3 +116,6 @@ we use because we want to save our data , even when we try to refresh it basical
     loadFromStorage();
     
 })();
+
+
+
