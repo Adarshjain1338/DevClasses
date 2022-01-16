@@ -99,12 +99,7 @@ body{
 div[purpose = name]{
     margin-top: 20px;
 }
-#app {
-  margin: 10px;
-  padding: 10px;
-  border: 3px solid rgb(110, 105, 105);
-  border-radius: 10px;
-}
+
 /*------------------------------------ Text file ---------------------- */
 .Text-file{
   height: auto;
@@ -138,4 +133,85 @@ div[purpose = name]{
 }
 div[purpose = name]{
   margin-top: 20px;
+}
+/********************** Application css*************************** */
+#app {
+  
+  border: 3px solid rgb(110, 105, 105);
+  border-radius: 10px;
+  margin: 10px;
+}
+#app-title-bar{
+  display: flex;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+#app-title{
+  padding: 4px;
+  background-color: #3492df;
+  justify-content: center;
+  text-align: center;
+  width: 93%;
+  font-size:1.8em;
+
+  
+}
+#win-action{
+  background-color: rgb(113, 0, 128);
+  justify-content: baseline;
+}
+#win-action span{
+  padding: 5px;
+}
+#app-menu-bar{
+  background-color: lightslategray;
+  padding: 10px;
+  height: 40px;
+  display:flex;
+}
+.notepad-menu{
+  display: flex;
+}
+.notepad-menu span{
+  margin:  15px;
+  padding: 4px;
+
+}
+.notepad-menu input{
+  margin: 10px;
+}
+.notepad-menu select{
+  margin: 6px;
+  padding: 2px;
+}
+
+.notepad-menu span:hover {
+  height: max-content;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(199, 71, 167);
+}
+
+.notepad-menu input[type=color] {
+  width: 40px;
+}
+
+#app-body{
+  background-color: #9ea8d4;
+  height:50vw;
+}
+.notepad-body{
+  padding: 5px;
+  height: 100%;
+  max-width: 98.2%;
+}
+.notepad-body textarea{
+  font-size: medium;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  height: 96%;
+  width: 100%;
 }
