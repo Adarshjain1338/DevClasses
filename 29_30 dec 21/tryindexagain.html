@@ -28,7 +28,7 @@
             <div id="win-action">
                 <span class="material-icons">minimize</span>
                 <span class="material-icons">fullscreen</span>
-                <span class="material-icons">close</span>
+                <span id = "app-close"class="material-icons">close</span>
             </div>
         </div>
         <div id="app-menu-bar"></div>
@@ -54,9 +54,10 @@
         <a purpose = "path" rid= "-1">Root</a>
         <div purpose="notepad-menu" class="notepad-menu">
             <span action="save" class="material-icons">save</span>
-            <span action="bold" class="material-icons">format_bold</span>
-            <span action="italic" class="material-icons">format_italic</span>
-            <span action="underline" class="material-icons">format_underline</span>
+            <span pressed="false" action="bold" class="material-icons">format_bold</span>
+            <span pressed="false" action="italic" class="material-icons">format_italic</span>
+            <span pressed="false" action="underline" class="material-icons">format_underline</span>
+            <span action="download" class="material-icons">download</span> 
             <input type="color" action="bg-color" />
             <input type="color" action="fg-color" />
             <select action="font-family">
@@ -75,6 +76,8 @@
                 <option value="20">20</option>
                 <option value="22">22</option>
             </select>
+            <input action="upload" type="file"/>
+            <a purpose="download" href="http://www.google.com" target="_blank">Link</a>
         </div>
 
     
@@ -82,7 +85,7 @@
             <p>I am notepad's menu</p>
         </div>
         <div purpose = "notepad-body" class="notepad-body">
-            <textarea name="" id="" cols="30" rows="10">Type Here . . . </textarea>
+            <textarea>Type Here . . . </textarea>
         </div>
     </template>
 
