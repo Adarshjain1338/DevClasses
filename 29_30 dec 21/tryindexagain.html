@@ -12,6 +12,7 @@
     <div id="header">
         <button id="addFolder">Add Folder</button>
         <button id="addTextFile">Add Text File</button>
+        <button id="addAlbum">Add Album</button>
     </div>
 
     <div id="breadCrumb">
@@ -50,14 +51,19 @@
             <span action="view">View</span>
             <div purpose ="name"></div>
         </div>
+        <div class="album" rid = "" pid = "">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose ="name"></div>
+        </div>
 
-        <a purpose = "path" rid= "-1">Root</a>
+        <a purpose="path" rid="-1"></a>
         <div purpose="notepad-menu" class="notepad-menu">
             <span action="save" class="material-icons">save</span>
             <span pressed="false" action="bold" class="material-icons">format_bold</span>
             <span pressed="false" action="italic" class="material-icons">format_italic</span>
             <span pressed="false" action="underline" class="material-icons">format_underline</span>
-            <span action="download" class="material-icons">download</span> 
             <input type="color" action="bg-color" />
             <input type="color" action="fg-color" />
             <select action="font-family">
@@ -75,17 +81,58 @@
                 <option value="18">18</option>
                 <option value="20">20</option>
                 <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
             </select>
+            <span action = "forupload" class = "material-icons">upload</span>
             <input action="upload" type="file"/>
             <a purpose="download" href="http://www.google.com" target="_blank">Link</a>
+            <span action="download" class="material-icons">download</span> 
         </div>
 
-    
-        <div purpose = "notepad-menu" class="notepad-menu">
-            <p>I am notepad's menu</p>
-        </div>
         <div purpose = "notepad-body" class="notepad-body">
             <textarea>Type Here . . . </textarea>
+        </div>
+        <div purpose = "album-menu"class="album-menu">
+            <span action = "save"class="material-icons">save</span>
+            <span action = "upload"class="material-icons">upload</span>
+            <span action = "download"class="material-icons">download</span>
+
+            <span action = "add" class="material-icons">add</span>
+            <span action = "delete" class="material-icons">delete</span>
+            <span action = "right " class="material-icons">chevron_left</span>
+            <span action = "left " class="material-icons">chevron_right</span>
+
+            <span action = "play"class="material-icons">play_circle</span>
+            <span action = "pause"class="material-icons">pause</span>
+        </div>
+        <div purpose = "album-body"class="album-body">
+            <div class="picture-list">
+                <img src="https://wallpaperaccess.com/full/28302.jpg" alt="">
+                <img src="https://wallpaperaccess.com/full/28302.jpg" alt="">
+                <img src="https://wallpaperaccess.com/full/28302.jpg" alt="">
+                <img src="https://image.shutterstock.com/image-vector/slogan-life-short-enjoy-simple-260nw-1750856333.jpg" alt="">
+                <img src="https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <img src="https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                
+            </div>
+            <div class="picture-view">
+                <div class="move-left">
+                    <span action = "left" class="material-icons">arrow_left</span>
+                </div>
+                <div class="picture-main">
+                    <!-- <img src="https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> -->
+                    <!-- <img src="https://wallpaperaccess.com/full/28302.jpg" alt=""> -->
+                    <!-- <img src="https://image.shutterstock.com/image-vector/slogan-life-short-enjoy-simple-260nw-1750856333.jpg" alt=""> -->
+                    <img src="" alt="">
+                    
+                </div>
+                <div class="move-right">
+                    <span action = "right" class="material-icons">arrow_right</span>
+                </div>
+            </div>
         </div>
     </template>
 
