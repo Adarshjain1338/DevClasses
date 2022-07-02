@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #2a2a2a;
+    color: white;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+/*-------------------------------------1st part------------------------------------*/
+
+
+#action-bar{
+    padding: 5px;
+    display: flex;
+    background-color: #141313;
+}
+#action-bar * {
+    background-color: #2c2c85;
+    margin: 9px 7px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#action-bar span:hover{
+    background-color: #b525dc;
+    transition:0.19s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#action-bar select{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px; 
+    cursor: pointer;
+ 
+}
+#action-bar select:hover{
+    background-color: #DEDEDE;
+    color: black;
+    border-radius: 5px;
+}
+
+/*-------------------------------------2st part------------------------------------*/
+
+#content{
+    display: flex;
+}
+
+/*-------------------------------------2.1 part------------------------------------*/
+
+#content-list{
+    width: 20%;
+    height: 91vh;
+    background-color: #2a2a2a;
+    
+}
+
+/*-------------------------------------2.1.1 part------------------------------------*/
+
+/*----------NEW slide------------*/
+
+#new-slide{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191819;
+    height: 20%;
+    width: 95%;
+    border: 2px solid #3b3a3b;
+    box-shadow: 0px 5px 20px 2px #1a1a1a;
+    border-radius: 8px;
+
+}
+#new-slide:hover{
+    transform: scale(1.02);
+    border: 2px solid whitesmoke;
+    transition:transform 0.125s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#slide-list{
+    margin: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #191819;
+    height: 79%;
+    width: auto;
+    border: 2px solid #3b3a3b;
+    box-shadow: 0px 5px 20px 2px #1a1a1a;
+    border-radius: 8px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+/*---------------------scroll bar copied--------------*/
+#slide-list::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background-color: #0b0b0b;
+
+} 
+#slide-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #686868  ;
+    border: 1px solid #000;
+  }
+#slide-list::-webkit-scrollbar {
+    width: 10px;
+  }
+/*--------------------------------------------------------*/
+#slide{
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191819;
+    height: 30%;
+    width: auto;
+    border: 2px solid #3b3a3b;
+    box-shadow: 0px 5px 20px 2px #1a1a1a;
+    border-radius: 8px;
+}
+#slide:hover{
+    transform: scale(1.02);
+    border: 2px solid whitesmoke;
+    transition:transform 0.125s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/*-------------------------------------2.2 part------------------------------------*/
+
+#content-details{
+    width: 80%;
+    height: 91vh;   
+    border: 3px solid gray;
+    border-radius: 10px; 
+    margin: 0.2%;
+}
+#create-slide{
+    display: none;
+   
+}
+#create-slide div{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#create-slide input{
+    padding: 20px;
+    height: 10vh;
+    font-size: 1.8em;
+    border-radius: 5px;
+    width: 80%;
+    margin: 2%;
+    background-color: #1a1a1a;
+    color: white;
+
+}
+#create-slide textarea{
+    padding: 20px;
+    height: 50vh;
+    width: 80%;
+    margin: 2%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    overflow: hidden    ;
+}
+#create-slide ::placeholder{
+    font-size: 1.2em;
+}
+#saveSlideBtn{
+    padding: 2%;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(170, 207, 255);
+    color: black;
+    border-radius: 10px;
+    font-family:monospace;
+}
+
+#saveSlideBtn:hover{
+    transform: scale(1.09);
+
+    color: black;
+    transition:0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#show-slide{
+    display: none;
+}
+
+
+
+#overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 8.5%;
+    left: 0%;
+    background-color: #6991ff5d;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+#text{
+    position: absolute;
+    padding:20px;
+    font-size: 2.5em;
+    background-color:#000000;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+#contentDetailsOverlay{
+    
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 8.5%;
+    left: 20%;
+    background-color: #6991ff5d;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+#contentDetailsText{
+    position: absolute;
+    padding:20px;
+    font-size: 2em;
+    background-color:#000000;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
