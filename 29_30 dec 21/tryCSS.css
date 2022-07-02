@@ -30,7 +30,7 @@ body{
   #header button:hover{
     transform: scale(1.1);
     font-weight: 600;
-    transition:transform.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0px 2px 15px 2px rgb(134, 130, 131);
@@ -145,6 +145,10 @@ div[purpose = name]{
   display: flex;
   border-radius: 4px;
   justify-content: space-between;
+}
+#win-action{
+  display: flex;
+  justify-items: stretch;
 }
 
 #app-title{
