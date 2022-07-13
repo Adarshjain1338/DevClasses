@@ -21,6 +21,7 @@
         <select id="selectAlbum" value=-1>
             <option value="-1">Choose an album</option>
         </select>
+        <input type = "file" multiple = "false" id="uploadFile"/>
     </div>
     <div id="content">
         <div id="content-list">
@@ -28,19 +29,22 @@
                 New Slide
             </div>
             <div id="slide-list">
-
+               
             </div>
 
         </div>
         <div id="content-details">
             <div id="create-slide">
                 <div>
-                    <input type="text" placeholder="Title">
+                    <input id = "txtSlideUrl"type="text" placeholder="Image URL">
                 </div>
                 <div>
-                    <textarea cols="30" rows="10" placeholder="Description"></textarea>
+                    <input id = "txtSlideTitle"type="text" placeholder="Title">
                 </div>
-                <div><button id="saveSlideBtn">Save Slide</button></div>
+                <div>
+                    <textarea id = "txtSlideDesc"cols="30" rows="10" placeholder="Description"></textarea>
+                </div>
+                <div><button id= "btnSaveSlide">Save Slide</button></div>
             </div>
             <div id="show-slide">show a Slide
 
@@ -54,8 +58,32 @@
     <div id="overlay">
         <div id="text">Please Select an Album</div>
     </div>
+    <div id="playOverlay">
+        <div id="text"></div>
+    </div>
     <template id="allTemplates">
         <option purpose="new-album"></option>
+        <div class="slide">
+            <div class="title">
+            </div>
+            <div class="slide-content">
+                <div class="desc"></div>
+                <img src="" />
+            </div>
+        </div>
+        <div class="slide-in-view">
+            <div class = "slide-header">
+                <div class="title">
+                </div>
+                <span purpose = "edit" class="material-icons">edit</span>
+                <span purpose = "delete" class="material-icons">delete</span>
+            </div>
+            <div class="slide-content">
+                <div class="desc"></div>
+                <img src="" />
+            </div>
+        </div>
+
 
     </template>
     <script type="text/Javascript" src="Album.js"></script>
